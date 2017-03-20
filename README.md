@@ -105,3 +105,6 @@ def quick_sort(lists, left_index, right_index):
 ```
 > - 平均情况下，时间复杂度是O(nlogn)，空间复杂度是O(logn)
 > - 枢轴的值太大或者太小都会影响快排的性能，三数取中法、九数取中法等
+
+## 5.堆排
+[堆排、找出最小的k个数](heap_sort.ipynb)
