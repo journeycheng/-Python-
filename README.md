@@ -7,3 +7,5 @@
 [leetcode总结](leetcode.md)
 
 ## 二、知识点
+
+[零碎](pieces_tips.md)
