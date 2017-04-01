@@ -13,6 +13,12 @@ True
 >>> s = {'abc', 'bcd'}
 >>> isinstance(s, set)
 True
+
+>>> {}.fromkeys('xyz')
+{'y': None, 'x': None, 'z': None}
+
+>>> {}.fromkeys('xyz',1)
+{'y': 1, 'x': 1, 'z': 1}
 ```
 如果只给字典key，没有value，相当于是一个set
 
@@ -50,4 +56,40 @@ with open(pickle_file, 'rb') as f:
     test_dataset = save['test_dataset']
     test_labels = save['test_labels']
     del save
+```
+
+- 4.集合更新方法汇总：add(), update(), remove(), -=
+```
+>>> s = set(['a', 'b', 'c', 'd'])
+>>> s
+set(['a', 'c', 'b', 'd'])
+>>> s.add('z') # 增加元素
+>>> s
+set(['a', 'c', 'b', 'd', 'z'])
+>>> s.update('python')  # 增加元素
+>>> s
+set(['a', 'c', 'b', 'd', 'h', 'o', 'n', 'p', 't', 'y', 'z'])
+>>> s.remove('z') # 删除某个元素
+>>> s
+set(['a', 'c', 'b', 'd', 'h', 'o', 'n', 'p', 't', 'y'])
+>>> s -= set('python')  # 计算两个集合的差集
+>>> s
+set(['a', 'c', 'b', 'd'])
+```
+
+- 5.序列相关的内建函数
+sorted(), reversed(), enumerate(), zip()
+
+- 6.列表操作方法汇总
+```
+list.append(obj)  # 像列表中添加一个对象obj
+list.count(obj)    # 返回一个对象在列表中出现的次数
+list.extend(seq)   # 把序列seq的内容添加到列表中
+list.index(obj, i=0, j=len(list))   # 返回list[k]=obj的k值，并且k的范围在[i,j]；否则引发ValueError异常
+list.find(obj) # 从list中找到obj，返回索引值，未找到返回－1，不会报错
+list.insert(index, obj)   # 在索引量为index的位置插入对象obj
+list.pop(index=-1)     # 删除并返回指定位置（默认尾部）的对象
+list.remove(obj)   # 从列表中删除对象obj
+list.reverse()    # 原地翻转泪飙
+list.sort(func=None, key=None, reverse=False) # 原地排序列表
 ```
