@@ -4,8 +4,7 @@
   - 查看变量占用的空间大小: sys.getsizeof(variable)
   - 要检测所有的变量的话，可以用python的smiley模块监测所有的内存变量情况
   
-  
-- 2. 字典的灵活运用
+- 2.字典的灵活运用
 ```python
 >>> s = {'abc':1, 'bcd':2}
 >>> isinstance(s.keys(), list)
@@ -17,7 +16,7 @@ True
 ```
 如果只给字典key，没有value，相当于是一个set
 
-- 3. Pickle存储对象
+- 3.Pickle存储对象
   - 通常用来存储一些计算好的变量，方便以后直接使用：对象 -> 文本 -> 文件
   - dumps()和load()
   
