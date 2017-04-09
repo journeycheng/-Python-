@@ -1,6 +1,6 @@
 ## 二叉树遍历
 
-### 树的定义和测试用例
+### 1、树的定义和测试用例
 ```python
 #! coding=utf-8
 class TreeNode(object):
@@ -23,7 +23,7 @@ node2.right = node5
 node3.left = node6
 ```
 
-### 先序遍历
+### 2、先序遍历
 - 先序递归遍历
 ```python
 def preOrder_recursive(root):
@@ -65,7 +65,7 @@ def dfs(root):
                 stack.append(current.left)
 ```
 
-### 中序遍历
+### 3、中序遍历
 
 - 中序递归遍历
 ```python
@@ -93,7 +93,7 @@ def midOrder_nonrecursive(root):
             root = root.right
 ```
 
-### 后序遍历
+### 4、后序遍历
 
 - 后序递归遍历
 
@@ -130,7 +130,7 @@ def postOrder_nonrecursive(root):
             root = root.right
 ```
 
-### 层次遍历或者BFS遍历
+### 5、层次遍历或者BFS遍历
 
 ```python
 from collections import deque
