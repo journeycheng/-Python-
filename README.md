@@ -4,6 +4,8 @@
 
 [排序算法](sort_algorithm.md)
 
+[DFS、BFS走迷宫问题](dfs_bfs_map.md)
+
 [leetcode总结](leetcode.md)
 
 ## 二、知识点
