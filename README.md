@@ -2,9 +2,11 @@
 
 ## 一、算法
 
-[排序算法](sort_algorithm.md)
+[1.排序算法](sort_algorithm.md)
 
-[DFS、BFS走迷宫问题](dfs_bfs_map.md)
+[2.DFS、BFS走迷宫问题](dfs_bfs_map.md)
+
+[3.二叉树各种遍历方法](tree_search.md)
 
 [leetcode总结](leetcode.md)
 
