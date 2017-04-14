@@ -14,4 +14,6 @@
 
 [零碎](pieces_tips.md)
 
+[线程与进程](process_thread.md)
+
 [正则表达式](re.md)
