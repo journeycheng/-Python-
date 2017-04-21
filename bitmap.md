@@ -61,3 +61,24 @@ class Bitmap(object):
             return True
         return False
 ```
+
+## bitmap排序
+
+```python
+MAX=879
+shuffle_array = [45, 2, 78, 35, 67, 90, 879, 0, 340, 123, 46]
+result = []
+bitmap = Bitmap(MAX)
+for num in shuffle_array:
+    bitmap.set(num)
+    
+for i in range(MAX+1):
+    if bitmap.test(i):
+        result.append(i)
+```
+
+```python
+print result
+[0, 2, 35, 45, 46, 67, 78, 90, 123, 340, 879]
+```
+[附源代码](bitmap.py)
