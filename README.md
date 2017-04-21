@@ -8,6 +8,8 @@
 
 [3.二叉树各种遍历方法](tree_search.md)
 
+[4.bitmap实现](bitmap.md)
+
 [leetcode总结](leetcode.md)
 
 ## 二、知识点
