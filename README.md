@@ -10,7 +10,10 @@
 
 [4.bitmap实现](bitmap.md)
 
+[5.分治](divide_and_conquer.md)
+
 [leetcode总结](leetcode.md)
+
 
 ## 二、知识点
 
