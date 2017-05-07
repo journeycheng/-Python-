@@ -120,8 +120,7 @@ def postOrder_nonrecursive(root):
             current = stack.pop()
             print current.val
         if stack:
-            stack_flag.pop()
-            stack_flag.append(1)
+            stack_flag[-1] = 1
             root = stack[-1]
             root = root.right
 ```
