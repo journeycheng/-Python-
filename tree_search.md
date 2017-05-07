@@ -108,22 +108,20 @@ def postOrder_recursive(root):
 ```python
 def postOrder_nonrecursive(root):
     stack = list()
-    stack_int = list()
-    i = 1
+    stack_flag = list()
     while root or stack:
         while root:
             stack.append(root)
-            stack_int.append(0)
+            stack_flag.append(0)
             root = root.left
 
-        while stack and stack_int[-1] == i:
-            stack_int.pop()
+        while stack and stack_flag[-1] == 1:
+            stack_flag.pop()
             current = stack.pop()
             print current.val
-
         if stack:
-            stack_int.pop()
-            stack_int.append(1)
+            stack_flag.pop()
+            stack_flag.append(1)
             root = stack[-1]
             root = root.right
 ```
