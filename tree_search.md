@@ -52,17 +52,15 @@ def preOrder_nonrecursive(root):
 ```python
 def dfs(root):
     stack = list()
-    if root:
+    if root: 
         stack.append(root)
-
-        while stack:
-            current = stack.pop()
-            print current.val
-
-            if current.right:
-                stack.append(current.right)
-            if current.left:
-                stack.append(current.left)
+    while stack:
+        current = stack.pop()
+        print current.val
+        if current.right:
+            stack.append(current.right)
+        if current.left:
+            stack.append(current.left)
 ```
 
 ### 3、中序遍历
